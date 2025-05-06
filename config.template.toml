@@ -1,18 +1,16 @@
 [general]
 log_level = 1
 # Only Full Season at this time. Perhaps 'First Episode' in the future?
-download_target = "full_season"
-
-# START HERE
+# download_target = "full_season"
 
 # Determines how many episodes before the end of the season a new season should be downloaded.
-episode_threshold = 2
+episode_threshold = 4
 
-# Plex
-plex_url = "http://ip_to_plex_server:32400/"
-plex_token = "plex_token"
-plex_tv_shows_library = "tv_show_library_name_from_plex"
+[plex]
+url = "http://ip_to_plex_server:32400/"
+token = "plex_token"
+tv_shows_library = "tv_show_library_name_from_plex"
 
-# Sonarr
-sonarr_url = "http://ip_to_sonarr:8989"
-sonarr_api_key = "api_key"
+[sonarr]
+url = "http://ip_to_sonarr:8989"
+api_key = "api_key"
