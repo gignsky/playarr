@@ -32,6 +32,9 @@ jobs:
 
       - name: Install zig and cargo-zigbuild
         run: nix profile install --accept-flake-config nixpkgs#zig nixpkgs#cargo-zigbuild
+      
+      - name: Install openssl
+        run: nix profile install --accept-flake-config nixpkgs#openssl
 
       - name: Build binary
         run: cargo zigbuild --release --target ${{ matrix.target }}

@@ -6,16 +6,16 @@
     // https://twitter.com/sridca/status/1674947342607216641
     // "editor.inlayHints.enabled": "offUnlessPressed",
     "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
         ".direnv": true,
         ".envrc": true,
         ".github": true,
         ".gitignore": true,
-        ".vscode": true,
-        "**/.DS_Store": true,
-        "**/.git": true,
-        "**/.hg": true,
-        "**/.svn": true,
-        "**/Thumbs.db": true
+        ".vscode": true
     },
     "explorerExclude.backup": {},
     "editor.formatOnSaveMode": "modificationsIfAvailable",

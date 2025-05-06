@@ -17,6 +17,7 @@
         lolcat
         wslu
         cargo-generate
+        openssl
 
         # dotfiles programs
         inputs.dotfiles.packages.${system}.quick-results
