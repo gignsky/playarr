@@ -3,7 +3,7 @@ authors = ["Maxwell Rupp <gignsky@gignsky.com>"]
 edition = "2021"
 # If you change the name here, you must also do it in flake.nix (and run `cargo generate-lockfile` afterwards)
 name = "playarr"
-description = "A simple Rust project using Nix"
+description = "A Rust project using Nix that automatically downloads the next episode season of a show via sonarr when it is detected that a user is ending the currently downloaded season."
 version = "0.6.0-dev"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -11,8 +11,8 @@ version = "0.6.0-dev"
 [dependencies]
 #args parser
 clap = { version = "4.3.14", features = ["derive"] }
+plex-list = "0.1.8"
+sonarr = "0.1.0"
+toml = "0.8.22"
+url = "2.5.4"
 
-# #tui stuff - see https://github.com/ratatui/templates?tab=readme-ov-file
-# color-eyre = "0.6.3"
-# crossterm = "0.28.1"
-# ratatui = "0.29.0"
