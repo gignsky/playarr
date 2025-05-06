@@ -1,0 +1,27 @@
+{
+    "recommendations": [
+        "mkhl.direnv",
+        "tamasfe.even-better-toml",
+        "peterschmalfeldt.explorer-exclude",
+        "mhutchie.git-graph",
+        "arturock.gitstash",
+        "github.vscode-github-actions",
+        "me-dutour-mathieu.vscode-github-actions",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-pull-request-github",
+        "skellock.just",
+        "arrterian.nix-env-selector",
+        "pinage404.nix-extension-pack",
+        "jnoortheen.nix-ide",
+        "brettm12345.nixfmt-vscode",
+        "dustypomerleau.rust-syntax",
+        "tomoki1207.pdf",
+        "donjayamanne.githistory",
+        "yzhang.markdown-all-in-one",
+        "mechatroner.rainbow-csv",
+        "tomblind.scm-buttons-vscode",
+        "nefrob.vscode-just-syntax",
+        "rust-lang.rust-analyzer"
+    ]
+}

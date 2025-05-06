@@ -1,0 +1,30 @@
+{
+    "editor.formatOnSave": true,
+    "rust-analyzer.files.excludeDirs": [
+        ".direnv"
+    ],
+    // https://twitter.com/sridca/status/1674947342607216641
+    // "editor.inlayHints.enabled": "offUnlessPressed",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": false,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".direnv": true,
+        ".gitignore": true,
+        ".envrc": true
+    },
+    "explorerExclude.backup": {},
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "nix.enableLanguageServer": true,
+    "nix.formatterPath": "nixfmt",
+    "rust-analyzer.restartServerOnConfigChange": true,
+    "rust-analyzer.testExplorer": true,
+    "rust-analyzer.diagnostics.previewRustcOutput": true,
+    "rust-analyzer.diagnostics.styleLints.enable": true,
+    "rust-analyzer.hover.actions.references.enable": true,
+    "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+    "rust-analyzer.inlayHints.discriminantHints.enable": "fieldless",
+    "rust-analyzer.interpret.tests": true
+}
