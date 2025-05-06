@@ -8,6 +8,7 @@ use serde::Deserialize;
 use std::fs;
 use std::io;
 use std::path::Path;
+use url::{ParseError, Url};
 
 /// Reads config file into structs for general configuration reference
 ///
@@ -80,13 +81,13 @@ struct GeneralConfig {
 
 #[derive(Deserialize, Debug)]
 struct Plex {
-    url: String,
+    url: Url,
     token: String,
     tv_shows_library: String,
 }
 
 #[derive(Deserialize, Debug)]
 struct Sonarr {
-    url: String,
+    url: Url,
     api_key: String,
 }
