@@ -22,6 +22,10 @@
         "mechatroner.rainbow-csv",
         "tomblind.scm-buttons-vscode",
         "nefrob.vscode-just-syntax",
-        "rust-lang.rust-analyzer"
+        "rust-lang.rust-analyzer",
+        "belfz.search-crates-io",
+        "kevinkassimo.cargo-toml-snippets",
+        "taiyuuki.vscode-cargo-scripts",
+        "washan.cargo-appraiser"
     ]
 }

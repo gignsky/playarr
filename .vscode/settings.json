@@ -26,5 +26,14 @@
     "rust-analyzer.hover.actions.references.enable": true,
     "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
     "rust-analyzer.inlayHints.discriminantHints.enable": "fieldless",
-    "rust-analyzer.interpret.tests": true
+    "rust-analyzer.interpret.tests": true,
+    "evenBetterToml.formatter.alignComments": true,
+    "evenBetterToml.formatter.alignEntries": true,
+    "evenBetterToml.formatter.arrayAutoCollapse": true,
+    "evenBetterToml.formatter.arrayAutoExpand": true,
+    "evenBetterToml.formatter.arrayTrailingComma": true,
+    "evenBetterToml.formatter.indentEntries": true,
+    "evenBetterToml.formatter.indentTables": true,
+    "evenBetterToml.formatter.trailingNewline": true,
+    "evenBetterToml.schema.links": true
 }
