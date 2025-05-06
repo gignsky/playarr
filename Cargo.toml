@@ -1,0 +1,18 @@
+[package]
+authors = ["Maxwell Rupp <gignsky@gignsky.com>"]
+edition = "2021"
+# If you change the name here, you must also do it in flake.nix (and run `cargo generate-lockfile` afterwards)
+name = "playarr"
+description = "A simple Rust project using Nix"
+version = "0.0.1"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#args parser
+clap = { version = "4.3.14", features = ["derive"] }
+
+# #tui stuff - see https://github.com/ratatui/templates?tab=readme-ov-file
+# color-eyre = "0.6.3"
+# crossterm = "0.28.1"
+# ratatui = "0.29.0"

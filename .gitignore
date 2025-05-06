@@ -2,3 +2,10 @@
 .venv/*
 *.pyc
 config.personal.py
+
+/target
+/result
+/result-lib
+.direnv
+
+/.pre-commit-config.yaml
