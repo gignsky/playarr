@@ -1,7 +1,7 @@
 [general]
 log_level = 1
 # Only Full Season at this time. Perhaps 'First Episode' in the future?
-# download_target = "full_season"
+download_target = "full_season"
 
 # Determines how many episodes before the end of the season a new season should be downloaded.
 episode_threshold = 4
