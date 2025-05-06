@@ -9,3 +9,4 @@ config.personal.py
 .direnv
 
 /.pre-commit-config.yaml
+config.toml
