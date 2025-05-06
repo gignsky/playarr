@@ -6,7 +6,7 @@ use clap::Parser;
 /// Application configuration
 struct Args {
     /// whether to be verbose
-    #[arg(short = 'v')]
+    #[arg(short = 'v', long = "verbose")]
     verbose: bool,
 
     /// an optional name to greet
