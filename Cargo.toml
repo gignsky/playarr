@@ -13,6 +13,7 @@ version = "0.6.0-dev"
 clap = { version = "4.3.14", features = ["derive"] }
 plex-api = "0.0.11"
 plex-list = "0.1.8"
+serde = { version = "1.0.219", features = ["derive"] }
 sonarr = "0.1.0"
 toml = "0.8.22"
 url = "2.5.4"
