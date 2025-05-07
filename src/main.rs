@@ -7,6 +7,7 @@ use std::fs;
 use std::path::Path;
 
 mod config_parser;
+mod connection_tester;
 
 #[derive(Parser, Debug)]
 #[clap(author = "Maxwell Rupp", version, about)]
@@ -35,6 +36,17 @@ fn main() {
     let config_path = Path::new("config.toml");
     let config = config_parser::read_config(Path::new(config_path));
 
-    // Print the config for debugging
-    println!("Config: {:#?}", config);
+    // // Print the config for debugging
+    // println!("Config: {:#?}", config);
+
+    // Test connection to Plex & Sonarr
+    match config {
+        Ok(config) => {
+            // println!("Config: {:#?}", config);
+            connection_tester::test_connection(config);
+        }
+        Err(e) => {
+            eprintln!("ERROR: Unable to parse config file: {}", e);
+        }
+    }
 }
