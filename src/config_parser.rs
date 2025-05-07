@@ -67,27 +67,27 @@ pub fn read_config(config_path: &Path) -> Result<Config, io::Error> {
 
 #[derive(Deserialize, Debug)]
 pub struct Config {
-    general: GeneralConfig,
-    plex: Plex,
-    sonarr: Sonarr,
+    pub general: GeneralConfig,
+    pub plex: Plex,
+    pub sonarr: Sonarr,
 }
 
 #[derive(Deserialize, Debug)]
-struct GeneralConfig {
-    log_level: u8,
-    download_target: String,
-    episode_threshold: u8,
+pub struct GeneralConfig {
+    pub log_level: u8,
+    pub download_target: String,
+    pub episode_threshold: u8,
 }
 
 #[derive(Deserialize, Debug)]
-struct Plex {
-    url: Url,
-    token: String,
-    tv_shows_library: String,
+pub struct Plex {
+    pub url: Url,
+    pub token: String,
+    pub tv_shows_library: String,
 }
 
 #[derive(Deserialize, Debug)]
-struct Sonarr {
-    url: Url,
-    api_key: String,
+pub struct Sonarr {
+    pub url: Url,
+    pub api_key: String,
 }
