@@ -1,12 +1,11 @@
 { ... }:
 {
   perSystem =
-    {
-      config,
-      self',
-      pkgs,
-      lib,
-      ...
+    { config
+    , self'
+    , pkgs
+    , lib
+    , ...
     }:
     {
       devShells.default = pkgs.mkShell {
@@ -17,15 +16,21 @@
           config.pre-commit.devShell # See ./nix/modules/pre-commit.nix
         ];
         packages = with pkgs; [
-          just
+          # nix packages
           nixd # Nix language server
+          nil
+
+          # rust packages
           bacon
           config.process-compose.cargo-doc-live.outputs.package
-          nil
-          lolcat
-          wslu
           cargo-generate
-          openssl
+
+          # dev deps
+          wslu
+          # openssl
+
+          # python deps
+          python3
 
           # # dotfiles programs
           # inputs.dotfiles.packages.${system}.quick-results
