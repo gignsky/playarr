@@ -1,0 +1,6 @@
+# rustfmt configuration
+# This ensures consistent formatting between rustfmt and treefmt
+
+# Import sorting - ensure consistent ordering
+imports_granularity = "Crate"
+group_imports = "StdExternalCrate"
