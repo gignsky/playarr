@@ -25,6 +25,8 @@
           bacon
           # config.process-compose.cargo-doc-live.outputs.package
 
+          # python
+
           # utilities
           gitflow
 
