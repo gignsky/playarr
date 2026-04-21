@@ -27,12 +27,12 @@ _: {
           # utilities
           gitflow
 
-          # # gigdot programs
-          # inputs.gigdot.packages.${system}.quick-results
-          # inputs.gigdot.packages.${system}.upjust
-          # inputs.gigdot.packages.${system}.upspell
-          # inputs.gigdot.packages.${system}.upflake
-          # inputs.gigdot.packages.${system}.cargo-update
+          # gigdot programs
+          inputs.gigdot.packages.${system}.quick-results
+          inputs.gigdot.packages.${system}.upjust
+          inputs.gigdot.packages.${system}.upspell
+          inputs.gigdot.packages.${system}.upflake
+          inputs.gigdot.packages.${system}.cargo-update
         ];
         shellHook = ''
           echo "welcome to the rust development environment for the playarr package" | ${pkgs.cowsay}/bin/cowsay | ${pkgs.lolcat}/bin/lolcat 2> /dev/null;
