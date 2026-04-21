@@ -2,3 +2,5 @@
 .venv/*
 *.pyc
 config.personal.py
+.direnv
+.pre-commit-config.yaml
