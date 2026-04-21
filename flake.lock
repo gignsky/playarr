@@ -12,7 +12,6 @@
       "original": {
         "owner": "srid",
         "repo": "cargo-doc-live",
-        "rev": "b09d5d258d2498829e03014931fc19aed499b86f",
         "type": "github"
       }
     },
