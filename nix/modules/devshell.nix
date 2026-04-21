@@ -23,7 +23,7 @@
           rustfmt
           clippy
           bacon
-          config.process-compose.cargo-doc-live.outputs.package
+          # config.process-compose.cargo-doc-live.outputs.package
 
           # utilities
           gitflow
