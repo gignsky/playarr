@@ -1,4 +1,5 @@
-_: {
+{ inputs, ... }:
+{
   perSystem =
     {
       config,
@@ -29,9 +30,7 @@ _: {
 
           # gigdot programs
           inputs.gigdot.packages.${system}.quick-results
-          inputs.gigdot.packages.${system}.upjust
-          inputs.gigdot.packages.${system}.upspell
-          inputs.gigdot.packages.${system}.upflake
+          inputs.gigdot.packages.${system}.upignore
           inputs.gigdot.packages.${system}.cargo-update
         ];
         shellHook = ''
