@@ -16,7 +16,7 @@ _: {
         packages = with pkgs; [
           # nix stuff
           nixd
-          nixfmt-rfc-style
+          nixfmt
 
           # rust stuff
           rustfmt
