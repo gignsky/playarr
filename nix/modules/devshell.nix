@@ -2,7 +2,7 @@
 {
   perSystem =
     {
-      config,
+      # config,
       self',
       pkgs,
       ...
@@ -12,7 +12,7 @@
         name = "playarr-shell";
         inputsFrom = [
           self'.devShells.rust
-          config.pre-commit.devShell # See ./nix/modules/pre-commit.nix
+          # config.pre-commit.devShell # See ./nix/modules/pre-commit.nix
         ];
         packages = with pkgs; [
           # nix stuff
