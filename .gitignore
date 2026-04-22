@@ -5,3 +5,4 @@ config.personal.py
 .direnv
 .pre-commit-config.yaml
 target
+.devshell
