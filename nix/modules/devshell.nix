@@ -14,6 +14,8 @@
           self'.devShells.rust
           # config.pre-commit.devShell # See ./nix/modules/pre-commit.nix
         ];
+        # UV_PYTHON_DOWNLOADS = "never";
+        # localBinInPath = true;
         packages = with pkgs; [
           # nix stuff
           nixd
@@ -26,6 +28,7 @@
           # config.process-compose.cargo-doc-live.outputs.package
 
           # python
+          # uv
 
           # utilities
           gitflow
@@ -36,6 +39,8 @@
           inputs.gigdot.packages.${system}.cargo-update
         ];
         shellHook = ''
+          # echo "installing python via uv..."
+          # uv python install 3.14
           echo "welcome to the rust development environment for the playarr package" | ${pkgs.cowsay}/bin/cowsay | ${pkgs.lolcat}/bin/lolcat 2> /dev/null;
         '';
       };
