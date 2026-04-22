@@ -1,6 +1,6 @@
 // ARGS Parser
 use clap::Parser;
-use rust_nix_template::{format_greeting, is_verbose_mode, Args};
+use playarr::{format_greeting, is_verbose_mode, Args};
 
 // // TUI Stuff
 // use color_eyre::Result;

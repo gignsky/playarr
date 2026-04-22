@@ -903,6 +903,7 @@
         "gigdot": "gigdot",
         "git-hooks": "git-hooks_2",
         "nixpkgs": "nixpkgs_7",
+        "pyproject-nix": "pyproject-nix",
         "rust-flake": "rust-flake_2",
         "systems": "systems_4"
       }

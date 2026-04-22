@@ -6,23 +6,24 @@
       nixpkgs,
       ...
     }:
+    let
+      project = inputs.pyproject-nix.lib.project.loadRequirementsTxt { projectRoot = ../../.; };
+      pkgs = nixpkgs.legacyPackages;
+      python = pkgs.python3;
+      pythonEnv =
+        # Assert that versions from nixpkgs matches what's described in requirements.txt
+        # In projects that are overly strict about pinning it might be best to remove this assertion entirely.
+        assert project.validators.validateVersionConstraints { inherit python; } == { };
+        (
+          # Render requirements.txt into a Python withPackages environment
+          pkgs.python3.withPackages (project.renderers.withPackages { inherit python; })
+        );
+    in
     {
-      packages = {
-        hello = inputs.dream2nix.lib.evalModules {
-          packageSets.nixpkgs = nixpkgs.legacyPackages;
-          modules = [
-            ./hello.nix
-            {
-              paths = {
-                projectRoot = ./.;
-                projectRootFile = "flake.nix";
-                paths.package = ./.;
-              };
-            }
-          ];
-        };
-        # default = self'.packages.${system}.hello;
-        default = self'.packages.hello;
-      };
+      devShells.default = pkgs.mkShell { packages = [ pythonEnv ]; };
+      # packages = {
+      #   hello = inputs. {
+      #   default = self'.packages.hello;
+      # };
     };
 }
