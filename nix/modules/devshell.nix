@@ -39,8 +39,6 @@
           inputs.gigdot.packages.${system}.cargo-update
         ];
         shellHook = ''
-          # echo "installing python via uv..."
-          # uv python install 3.14
           echo "welcome to the rust development environment for the playarr package" | ${pkgs.cowsay}/bin/cowsay | ${pkgs.lolcat}/bin/lolcat 2> /dev/null;
         '';
       };
