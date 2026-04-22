@@ -2,6 +2,17 @@
 use clap::Parser;
 use playarr::{format_greeting, is_verbose_mode, Args};
 
+// main flow process:
+// 1. query plex for watching
+// 2. query plex for recently watched
+// 3. query sonarr
+// 4. update database with fresh sonarr data
+// 5. compare plex watching/recently-watched with databse
+// 6. prep-list of items to download
+// 7. sort-by priority
+// 8. smart-queue off sonarr downloads
+// 9. monitor downloads with nzbget and/or sonnar
+
 // // TUI Stuff
 // use color_eyre::Result;
 // use crossterm::event::{self, Event};
