@@ -1,4 +1,4 @@
-use rust_nix_template::{format_greeting, get_name_or_default, is_verbose_mode, Args};
+use playarr::{format_greeting, get_name_or_default, is_verbose_mode, Args};
 
 #[test]
 fn integration_test_greeting_functionality() {
